@@ -29,8 +29,8 @@ public class Anagrams {
                     start++;
                 }
             }
-            String reverseletters = String.valueOf(lettersinwords);
-            System.out.println(reverseletters);
+            String reverse = String.valueOf(lettersinwords);
+            System.out.println(reverse);
         }
     }
 }
