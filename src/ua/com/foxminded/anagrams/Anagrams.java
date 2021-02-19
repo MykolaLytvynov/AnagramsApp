@@ -1,6 +1,4 @@
-package ua.com.mykola.anagrams;
-
-import java.util.Scanner;
+package ua.com.foxminded.anagrams;
 
 public class Anagrams {
 

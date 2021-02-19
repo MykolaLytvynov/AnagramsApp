@@ -1,4 +1,4 @@
-package ua.com.mykola.anagrams;
+package ua.com.foxminded.anagrams;
 
 public class ReversePhrase {
 
@@ -28,7 +28,7 @@ public class ReversePhrase {
             result += String.valueOf(lettersinwords);
             result += " ";
         }
-        result.split(" $");
+        result = result.trim();
         return result;
     }
 }
