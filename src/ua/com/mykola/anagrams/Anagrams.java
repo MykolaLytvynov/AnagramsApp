@@ -8,6 +8,6 @@ public class Anagrams {
         ScannerTextFromConsole textinconsole = new ScannerTextFromConsole();
         ReversePhrase phraseforreverse = new ReversePhrase();
 
-        phraseforreverse.Reverse(textinconsole.Scannertext());
+        System.out.println(phraseforreverse.reverse(textinconsole.scannertext()));
     }
 }

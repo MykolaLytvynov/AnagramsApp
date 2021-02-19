@@ -2,7 +2,8 @@ package ua.com.mykola.anagrams;
 
 public class ReversePhrase {
 
-    public void Reverse(String textforreverce) {
+    public String reverse(String textforreverce) {
+        String result = new String();
         String[] wordsinphrase = textforreverce.split(" ");
         for (int i = 0; i < wordsinphrase.length; i++) {
             char[] lettersinwords = wordsinphrase[i].toCharArray();
@@ -24,8 +25,10 @@ public class ReversePhrase {
                     start++;
                 }
             }
-            String reverseletters = String.valueOf(lettersinwords);
-            System.out.println(reverseletters);
+            result += String.valueOf(lettersinwords);
+            result += " ";
         }
+        result.split(" $");
+        return result;
     }
 }
