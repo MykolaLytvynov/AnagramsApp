@@ -1,10 +1,9 @@
 package ua.com.mykola.anagrams;
 
 public class ReversePhrase {
-    public static String reverseletters;
 
-    public static void Reverse() {
-        String[] wordsinphrase = ScannerTextFromConsole.textfromconsole.split(" ");
+    public void Reverse(String textforreverce) {
+        String[] wordsinphrase = textforreverce.split(" ");
         for (int i = 0; i < wordsinphrase.length; i++) {
             char[] lettersinwords = wordsinphrase[i].toCharArray();
             int start = 0;
@@ -25,7 +24,7 @@ public class ReversePhrase {
                     start++;
                 }
             }
-            reverseletters = String.valueOf(lettersinwords);
+            String reverseletters = String.valueOf(lettersinwords);
             System.out.println(reverseletters);
         }
     }
