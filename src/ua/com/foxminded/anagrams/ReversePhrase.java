@@ -4,6 +4,10 @@ public class ReversePhrase {
 
     public String reverse(String textforreverce) {
         String result = new String();
+        if (textforreverce == null) {
+            return result = "The String must not be empty!!!";
+        }
+
         String[] wordsinphrase = textforreverce.split(" ");
         for (int i = 0; i < wordsinphrase.length; i++) {
             char[] lettersinwords = wordsinphrase[i].toCharArray();
