@@ -4,7 +4,7 @@ public class ReversePhrase {
 
     public String reverse(String textforreverce) {
         String result = new String();
-        if (textforreverce == null) {
+        if (textforreverce == null || textforreverce.trim().isEmpty()) {
             return result = "The String must not be empty!!!";
         }
 
@@ -35,4 +35,5 @@ public class ReversePhrase {
         result = result.trim();
         return result;
     }
-}
+
+    }
